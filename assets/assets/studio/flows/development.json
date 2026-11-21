@@ -1,0 +1,1325 @@
+{
+ "id": "development",
+ "serviceId": "development",
+ "version": 1,
+ "title": {
+  "ar": "مخطط تطبيقك أو موقعك",
+  "en": "Your app or website blueprint"
+ },
+ "intro": {
+  "ar": "أجب عن أسئلة سريعة، وشاهد مخطط مشروعك وتقديره يتشكلان مباشرة.",
+  "en": "Answer a few quick questions and watch your project's blueprint and estimate take shape."
+ },
+ "baseHours": [
+  40,
+  60
+ ],
+ "steps": [
+  {
+   "id": "type",
+   "kind": "single",
+   "allowUnsure": true,
+   "unsureSpread": 0.25,
+   "title": {
+    "ar": "ماذا تريد أن تبني؟",
+    "en": "What are you building?"
+   },
+   "blueprintLabel": {
+    "ar": "النوع",
+    "en": "Type"
+   },
+   "options": [
+    {
+     "id": "mobile",
+     "icon": "smartphone",
+     "label": {
+      "ar": "تطبيق جوال",
+      "en": "Mobile app"
+     },
+     "effect": {
+      "hours": [
+       160,
+       260
+      ],
+      "tags": [
+       "app"
+      ]
+     }
+    },
+    {
+     "id": "webapp",
+     "icon": "web",
+     "label": {
+      "ar": "تطبيق ويب",
+      "en": "Web app"
+     },
+     "effect": {
+      "hours": [
+       140,
+       240
+      ],
+      "tags": [
+       "app"
+      ]
+     }
+    },
+    {
+     "id": "website",
+     "icon": "language",
+     "label": {
+      "ar": "موقع إلكتروني",
+      "en": "Website"
+     },
+     "effect": {
+      "hours": [
+       40,
+       90
+      ],
+      "tags": [
+       "site"
+      ]
+     },
+     "default": true
+    },
+    {
+     "id": "store",
+     "icon": "storefront",
+     "label": {
+      "ar": "متجر إلكتروني",
+      "en": "Online store"
+     },
+     "effect": {
+      "hours": [
+       90,
+       160
+      ],
+      "tags": [
+       "store",
+       "payments_core"
+      ],
+      "unlocks": [
+       "payments"
+      ]
+     }
+    },
+    {
+     "id": "internal",
+     "icon": "dashboard",
+     "label": {
+      "ar": "نظام داخلي",
+      "en": "Internal system"
+     },
+     "effect": {
+      "hours": [
+       120,
+       220
+      ],
+      "tags": [
+       "app"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "audience",
+   "kind": "single",
+   "allowOther": true,
+   "title": {
+    "ar": "لمن هو؟",
+    "en": "Who is it for?"
+   },
+   "blueprintLabel": {
+    "ar": "المستخدمون",
+    "en": "Users"
+   },
+   "options": [
+    {
+     "id": "customers",
+     "icon": "groups",
+     "label": {
+      "ar": "العملاء",
+      "en": "Customers"
+     }
+    },
+    {
+     "id": "businesses",
+     "icon": "business",
+     "label": {
+      "ar": "الشركات",
+      "en": "Businesses"
+     }
+    },
+    {
+     "id": "team",
+     "icon": "badge",
+     "label": {
+      "ar": "فريقنا",
+      "en": "Our team"
+     }
+    },
+    {
+     "id": "marketplace",
+     "icon": "swap_horiz",
+     "label": {
+      "ar": "طرفا سوق (بائع ومشترٍ)",
+      "en": "Both sides of a marketplace"
+     },
+     "effect": {
+      "multiplier": 1.3
+     }
+    }
+   ]
+  },
+  {
+   "id": "platforms",
+   "kind": "multi",
+   "showIf": {
+    "all": [
+     {
+      "tag": "app"
+     }
+    ]
+   },
+   "title": {
+    "ar": "على أي منصات؟",
+    "en": "Which platforms?"
+   },
+   "help": {
+    "ar": "اختر كل ما ينطبق",
+    "en": "Choose all that apply"
+   },
+   "blueprintLabel": {
+    "ar": "المنصات",
+    "en": "Platforms"
+   },
+   "options": [
+    {
+     "id": "ios",
+     "icon": "phone_iphone",
+     "label": {
+      "ar": "iOS",
+      "en": "iOS"
+     },
+     "effect": {
+      "multiplier": 1.1
+     }
+    },
+    {
+     "id": "android",
+     "icon": "android",
+     "label": {
+      "ar": "أندرويد",
+      "en": "Android"
+     },
+     "effect": {
+      "multiplier": 1.1
+     }
+    },
+    {
+     "id": "web",
+     "icon": "web",
+     "label": {
+      "ar": "الويب",
+      "en": "Web"
+     },
+     "effect": {
+      "multiplier": 1.15
+     }
+    },
+    {
+     "id": "desktop",
+     "icon": "desktop_windows",
+     "label": {
+      "ar": "سطح المكتب",
+      "en": "Desktop"
+     },
+     "effect": {
+      "multiplier": 1.2
+     }
+    }
+   ]
+  },
+  {
+   "id": "stage",
+   "kind": "single",
+   "allowUnsure": true,
+   "title": {
+    "ar": "أين أنت الآن؟",
+    "en": "Where are you now?"
+   },
+   "blueprintLabel": {
+    "ar": "المرحلة",
+    "en": "Stage"
+   },
+   "options": [
+    {
+     "id": "idea",
+     "icon": "lightbulb",
+     "label": {
+      "ar": "مجرد فكرة",
+      "en": "Just an idea"
+     },
+     "effect": {
+      "hours": [
+       16,
+       30
+      ]
+     },
+     "default": true
+    },
+    {
+     "id": "designs",
+     "icon": "palette",
+     "label": {
+      "ar": "لدي تصاميم",
+      "en": "I have designs"
+     },
+     "effect": {
+      "multiplier": 0.9
+     }
+    },
+    {
+     "id": "improve",
+     "icon": "build",
+     "label": {
+      "ar": "لدي تطبيق أريد تطويره",
+      "en": "I have an app to improve"
+     },
+     "effect": {
+      "multiplier": 0.8
+     }
+    },
+    {
+     "id": "rebuild",
+     "icon": "autorenew",
+     "label": {
+      "ar": "إعادة بناء نظام قديم",
+      "en": "Rebuild an old one"
+     },
+     "effect": {
+      "hours": [
+       10,
+       24
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "features",
+   "kind": "multi",
+   "allowOther": true,
+   "allowUnsure": true,
+   "unsureSpread": 0.2,
+   "title": {
+    "ar": "ماذا يجب أن يستطيع المستخدمون فعله؟",
+    "en": "What should people be able to do?"
+   },
+   "help": {
+    "ar": "اختر كل ما ينطبق، وأضف ما لم تجده في «أخرى»",
+    "en": "Choose all that apply, and add anything missing under “Other”"
+   },
+   "blueprintLabel": {
+    "ar": "الميزات",
+    "en": "Features"
+   },
+   "options": [
+    {
+     "id": "accounts",
+     "icon": "lock",
+     "label": {
+      "ar": "حسابات وتسجيل دخول",
+      "en": "Accounts and sign-in"
+     },
+     "effect": {
+      "hours": [
+       16,
+       28
+      ],
+      "unlocks": [
+       "accounts"
+      ]
+     },
+     "default": true
+    },
+    {
+     "id": "payments",
+     "icon": "credit_card",
+     "label": {
+      "ar": "مدفوعات",
+      "en": "Payments"
+     },
+     "effect": {
+      "hours": [
+       24,
+       44
+      ],
+      "unlocks": [
+       "payments"
+      ],
+      "tags": [
+       "payments"
+      ]
+     }
+    },
+    {
+     "id": "chat",
+     "icon": "chat",
+     "label": {
+      "ar": "محادثة",
+      "en": "Chat"
+     },
+     "effect": {
+      "hours": [
+       24,
+       48
+      ],
+      "unlocks": [
+       "chat"
+      ]
+     }
+    },
+    {
+     "id": "maps",
+     "icon": "place",
+     "label": {
+      "ar": "خرائط وموقع",
+      "en": "Maps and location"
+     },
+     "effect": {
+      "hours": [
+       16,
+       32
+      ],
+      "unlocks": [
+       "maps"
+      ]
+     }
+    },
+    {
+     "id": "booking",
+     "icon": "event",
+     "label": {
+      "ar": "حجوزات ومواعيد",
+      "en": "Booking"
+     },
+     "effect": {
+      "hours": [
+       24,
+       40
+      ],
+      "unlocks": [
+       "booking"
+      ]
+     }
+    },
+    {
+     "id": "notifications",
+     "icon": "notifications",
+     "label": {
+      "ar": "إشعارات",
+      "en": "Notifications"
+     },
+     "effect": {
+      "hours": [
+       8,
+       16
+      ]
+     }
+    },
+    {
+     "id": "admin",
+     "icon": "admin_panel_settings",
+     "label": {
+      "ar": "لوحة تحكم",
+      "en": "Admin dashboard"
+     },
+     "effect": {
+      "hours": [
+       30,
+       60
+      ]
+     }
+    },
+    {
+     "id": "ai",
+     "icon": "auto_awesome",
+     "label": {
+      "ar": "ميزات ذكاء اصطناعي",
+      "en": "AI features"
+     },
+     "effect": {
+      "hours": [
+       30,
+       70
+      ],
+      "unlocks": [
+       "ai"
+      ]
+     }
+    },
+    {
+     "id": "files",
+     "icon": "photo_library",
+     "label": {
+      "ar": "صور وملفات",
+      "en": "Photos and files"
+     },
+     "effect": {
+      "hours": [
+       10,
+       20
+      ]
+     }
+    },
+    {
+     "id": "offline",
+     "icon": "cloud_off",
+     "label": {
+      "ar": "يعمل بدون إنترنت",
+      "en": "Works offline"
+     },
+     "effect": {
+      "hours": [
+       24,
+       50
+      ]
+     }
+    },
+    {
+     "id": "integrations",
+     "icon": "hub",
+     "label": {
+      "ar": "ربط بأنظمة أخرى",
+      "en": "Connect to other systems"
+     },
+     "effect": {
+      "hours": [
+       20,
+       50
+      ],
+      "unlocks": [
+       "integrations"
+      ]
+     }
+    },
+    {
+     "id": "subscriptions",
+     "icon": "autorenew",
+     "label": {
+      "ar": "اشتراكات",
+      "en": "Subscriptions"
+     },
+     "effect": {
+      "hours": [
+       20,
+       36
+      ],
+      "unlocks": [
+       "payments"
+      ]
+     }
+    },
+    {
+     "id": "reviews",
+     "icon": "star",
+     "label": {
+      "ar": "تقييمات ومراجعات",
+      "en": "Reviews and ratings"
+     },
+     "effect": {
+      "hours": [
+       10,
+       20
+      ]
+     }
+    },
+    {
+     "id": "analytics",
+     "icon": "insights",
+     "label": {
+      "ar": "تحليلات وتقارير",
+      "en": "Analytics"
+     },
+     "effect": {
+      "hours": [
+       12,
+       28
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "design",
+   "kind": "single",
+   "allowUnsure": true,
+   "title": {
+    "ar": "كيف تريد أن يبدو؟",
+    "en": "How should it look?"
+   },
+   "blueprintLabel": {
+    "ar": "التصميم",
+    "en": "Design"
+   },
+   "options": [
+    {
+     "id": "clean",
+     "icon": "check_circle",
+     "label": {
+      "ar": "نظيف وبسيط",
+      "en": "Clean and simple"
+     },
+     "effect": {
+      "hours": [
+       10,
+       20
+      ]
+     },
+     "default": true
+    },
+    {
+     "id": "custom",
+     "icon": "brush",
+     "label": {
+      "ar": "تصميم مخصص",
+      "en": "Custom design"
+     },
+     "effect": {
+      "hours": [
+       30,
+       60
+      ]
+     }
+    },
+    {
+     "id": "premium",
+     "icon": "diamond",
+     "label": {
+      "ar": "هوية فاخرة مع حركة",
+      "en": "Premium brand with motion"
+     },
+     "effect": {
+      "hours": [
+       60,
+       110
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "languages",
+   "kind": "single",
+   "title": {
+    "ar": "بأي لغة؟",
+    "en": "Which languages?"
+   },
+   "blueprintLabel": {
+    "ar": "اللغات",
+    "en": "Languages"
+   },
+   "options": [
+    {
+     "id": "ar",
+     "icon": "translate",
+     "label": {
+      "ar": "العربية",
+      "en": "Arabic"
+     }
+    },
+    {
+     "id": "en",
+     "icon": "translate",
+     "label": {
+      "ar": "الإنجليزية",
+      "en": "English"
+     }
+    },
+    {
+     "id": "both",
+     "icon": "g_translate",
+     "label": {
+      "ar": "العربية والإنجليزية",
+      "en": "Arabic and English"
+     },
+     "effect": {
+      "multiplier": 1.1
+     }
+    },
+    {
+     "id": "more",
+     "icon": "public",
+     "label": {
+      "ar": "أكثر من لغتين",
+      "en": "More than two"
+     },
+     "effect": {
+      "multiplier": 1.18
+     }
+    }
+   ]
+  },
+  {
+   "id": "timeline",
+   "kind": "single",
+   "title": {
+    "ar": "متى تحتاجه؟",
+    "en": "When do you need it?"
+   },
+   "blueprintLabel": {
+    "ar": "الموعد",
+    "en": "Timeline"
+   },
+   "options": [
+    {
+     "id": "asap",
+     "icon": "bolt",
+     "label": {
+      "ar": "في أقرب وقت",
+      "en": "As soon as possible"
+     },
+     "effect": {
+      "multiplier": 1.2
+     }
+    },
+    {
+     "id": "1-3",
+     "icon": "schedule",
+     "label": {
+      "ar": "خلال 1–3 أشهر",
+      "en": "1–3 months"
+     }
+    },
+    {
+     "id": "3-6",
+     "icon": "date_range",
+     "label": {
+      "ar": "خلال 3–6 أشهر",
+      "en": "3–6 months"
+     }
+    },
+    {
+     "id": "flexible",
+     "icon": "all_inclusive",
+     "label": {
+      "ar": "مرن",
+      "en": "Flexible"
+     }
+    }
+   ]
+  },
+  {
+   "id": "after_launch",
+   "kind": "multi",
+   "title": {
+    "ar": "بعد الإطلاق",
+    "en": "After launch"
+   },
+   "help": {
+    "ar": "يمكننا استضافة مشروعك وصيانته",
+    "en": "We can host and look after it for you"
+   },
+   "blueprintLabel": {
+    "ar": "بعد الإطلاق",
+    "en": "After launch"
+   },
+   "options": [
+    {
+     "id": "hosting",
+     "icon": "dns",
+     "label": {
+      "ar": "استضافة مُدارة",
+      "en": "Managed hosting"
+     },
+     "effect": {
+      "monthly": [
+       30,
+       120
+      ]
+     }
+    },
+    {
+     "id": "care",
+     "icon": "build_circle",
+     "label": {
+      "ar": "خطة صيانة",
+      "en": "Maintenance plan"
+     },
+     "effect": {
+      "monthly": [
+       150,
+       400
+      ]
+     }
+    },
+    {
+     "id": "support",
+     "icon": "support_agent",
+     "label": {
+      "ar": "ساعات دعم شهرية",
+      "en": "Monthly support hours"
+     },
+     "effect": {
+      "monthly": [
+       200,
+       600
+      ]
+     }
+    }
+   ],
+   "optional": true
+  },
+  {
+   "id": "budget",
+   "kind": "budget",
+   "optional": true,
+   "title": {
+    "ar": "هل لديك ميزانية في ذهنك؟",
+    "en": "Budget in mind?"
+   },
+   "help": {
+    "ar": "اختياري — يساعدنا على اقتراح الخيار الأنسب",
+    "en": "Optional, helps us recommend the right option"
+   },
+   "blueprintLabel": {
+    "ar": "الميزانية",
+    "en": "Budget"
+   },
+   "options": [
+    {
+     "id": "b5",
+     "icon": "savings",
+     "label": {
+      "ar": "أقل من 5,000$",
+      "en": "Under $5,000"
+     },
+     "budgetUsd": 5000
+    },
+    {
+     "id": "b15",
+     "icon": "savings",
+     "label": {
+      "ar": "5,000$ – 15,000$",
+      "en": "$5,000 – $15,000"
+     },
+     "budgetUsd": 15000
+    },
+    {
+     "id": "b40",
+     "icon": "savings",
+     "label": {
+      "ar": "15,000$ – 40,000$",
+      "en": "$15,000 – $40,000"
+     },
+     "budgetUsd": 40000
+    },
+    {
+     "id": "b40p",
+     "icon": "savings",
+     "label": {
+      "ar": "أكثر من 40,000$",
+      "en": "Over $40,000"
+     },
+     "budgetUsd": 1000000
+    },
+    {
+     "id": "na",
+     "icon": "visibility_off",
+     "label": {
+      "ar": "أفضل عدم الإجابة",
+      "en": "Prefer not to say"
+     }
+    }
+   ]
+  },
+  {
+   "id": "pay_methods",
+   "kind": "multi",
+   "depth": "deep",
+   "module": "payments",
+   "allowOther": true,
+   "title": {
+    "ar": "طرق الدفع التي تريدها",
+    "en": "Payment methods"
+   },
+   "blueprintLabel": {
+    "ar": "المدفوعات",
+    "en": "Payments"
+   },
+   "options": [
+    {
+     "id": "cards",
+     "icon": "credit_card",
+     "label": {
+      "ar": "بطاقات",
+      "en": "Cards"
+     },
+     "effect": {
+      "hours": [
+       6,
+       10
+      ]
+     }
+    },
+    {
+     "id": "wallets",
+     "icon": "account_balance_wallet",
+     "label": {
+      "ar": "Apple Pay / Google Pay",
+      "en": "Apple Pay / Google Pay"
+     },
+     "effect": {
+      "hours": [
+       6,
+       12
+      ]
+     }
+    },
+    {
+     "id": "local",
+     "icon": "account_balance",
+     "label": {
+      "ar": "بوابات محلية",
+      "en": "Local gateways"
+     },
+     "effect": {
+      "hours": [
+       12,
+       24
+      ]
+     }
+    },
+    {
+     "id": "cod",
+     "icon": "local_shipping",
+     "label": {
+      "ar": "الدفع عند الاستلام",
+      "en": "Cash on delivery"
+     },
+     "effect": {
+      "hours": [
+       4,
+       8
+      ]
+     }
+    },
+    {
+     "id": "invoices",
+     "icon": "receipt_long",
+     "label": {
+      "ar": "فواتير",
+      "en": "Invoices"
+     },
+     "effect": {
+      "hours": [
+       10,
+       20
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "chat_type",
+   "kind": "multi",
+   "depth": "deep",
+   "module": "chat",
+   "title": {
+    "ar": "نوع المحادثة",
+    "en": "Chat details"
+   },
+   "blueprintLabel": {
+    "ar": "المحادثة",
+    "en": "Chat"
+   },
+   "options": [
+    {
+     "id": "one",
+     "icon": "person",
+     "label": {
+      "ar": "فردية",
+      "en": "One-to-one"
+     },
+     "effect": {
+      "hours": [
+       4,
+       8
+      ]
+     }
+    },
+    {
+     "id": "group",
+     "icon": "groups",
+     "label": {
+      "ar": "جماعية",
+      "en": "Group"
+     },
+     "effect": {
+      "hours": [
+       12,
+       24
+      ]
+     }
+    },
+    {
+     "id": "media",
+     "icon": "image",
+     "label": {
+      "ar": "صور وملفات وصوت",
+      "en": "Media and voice"
+     },
+     "effect": {
+      "hours": [
+       12,
+       24
+      ]
+     }
+    },
+    {
+     "id": "moderation",
+     "icon": "shield",
+     "label": {
+      "ar": "إشراف وحظر",
+      "en": "Moderation"
+     },
+     "effect": {
+      "hours": [
+       8,
+       16
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "booking_type",
+   "kind": "multi",
+   "depth": "deep",
+   "module": "booking",
+   "title": {
+    "ar": "تفاصيل الحجز",
+    "en": "Booking details"
+   },
+   "blueprintLabel": {
+    "ar": "الحجوزات",
+    "en": "Booking"
+   },
+   "options": [
+    {
+     "id": "staff",
+     "icon": "badge",
+     "label": {
+      "ar": "حسب الموظف",
+      "en": "By staff member"
+     },
+     "effect": {
+      "hours": [
+       8,
+       16
+      ]
+     }
+    },
+    {
+     "id": "rooms",
+     "icon": "meeting_room",
+     "label": {
+      "ar": "حسب المكان",
+      "en": "By room or resource"
+     },
+     "effect": {
+      "hours": [
+       8,
+       16
+      ]
+     }
+    },
+    {
+     "id": "deposits",
+     "icon": "payments",
+     "label": {
+      "ar": "دفعة مقدمة",
+      "en": "Deposits"
+     },
+     "effect": {
+      "hours": [
+       6,
+       12
+      ]
+     }
+    },
+    {
+     "id": "reminders",
+     "icon": "notifications_active",
+     "label": {
+      "ar": "تذكيرات",
+      "en": "Reminders"
+     },
+     "effect": {
+      "hours": [
+       4,
+       8
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "maps_type",
+   "kind": "multi",
+   "depth": "deep",
+   "module": "maps",
+   "title": {
+    "ar": "تفاصيل الخرائط",
+    "en": "Maps details"
+   },
+   "blueprintLabel": {
+    "ar": "الخرائط",
+    "en": "Maps"
+   },
+   "options": [
+    {
+     "id": "nearby",
+     "icon": "near_me",
+     "label": {
+      "ar": "البحث القريب",
+      "en": "Search nearby"
+     },
+     "effect": {
+      "hours": [
+       8,
+       14
+      ]
+     }
+    },
+    {
+     "id": "tracking",
+     "icon": "my_location",
+     "label": {
+      "ar": "تتبع مباشر",
+      "en": "Live tracking"
+     },
+     "effect": {
+      "hours": [
+       20,
+       40
+      ]
+     }
+    },
+    {
+     "id": "routes",
+     "icon": "route",
+     "label": {
+      "ar": "مسارات",
+      "en": "Routes"
+     },
+     "effect": {
+      "hours": [
+       12,
+       24
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "ai_type",
+   "kind": "multi",
+   "depth": "deep",
+   "module": "ai",
+   "allowOther": true,
+   "title": {
+    "ar": "ما الذي يفعله الذكاء الاصطناعي؟",
+    "en": "What should the AI do?"
+   },
+   "blueprintLabel": {
+    "ar": "الذكاء الاصطناعي",
+    "en": "AI"
+   },
+   "options": [
+    {
+     "id": "assistant",
+     "icon": "smart_toy",
+     "label": {
+      "ar": "مساعد محادثة",
+      "en": "Chat assistant"
+     },
+     "effect": {
+      "hours": [
+       20,
+       40
+      ]
+     }
+    },
+    {
+     "id": "recommend",
+     "icon": "recommend",
+     "label": {
+      "ar": "توصيات",
+      "en": "Recommendations"
+     },
+     "effect": {
+      "hours": [
+       20,
+       40
+      ]
+     }
+    },
+    {
+     "id": "vision",
+     "icon": "photo_camera",
+     "label": {
+      "ar": "قراءة الصور والمستندات",
+      "en": "Read images and documents"
+     },
+     "effect": {
+      "hours": [
+       24,
+       50
+      ]
+     }
+    },
+    {
+     "id": "search",
+     "icon": "manage_search",
+     "label": {
+      "ar": "بحث ذكي",
+      "en": "Smart search"
+     },
+     "effect": {
+      "hours": [
+       16,
+       30
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "roles",
+   "kind": "single",
+   "depth": "deep",
+   "module": "accounts",
+   "title": {
+    "ar": "أدوار المستخدمين",
+    "en": "Accounts and roles"
+   },
+   "blueprintLabel": {
+    "ar": "الأدوار",
+    "en": "Roles"
+   },
+   "options": [
+    {
+     "id": "one",
+     "icon": "person",
+     "label": {
+      "ar": "نوع واحد من المستخدمين",
+      "en": "One kind of user"
+     }
+    },
+    {
+     "id": "few",
+     "icon": "people",
+     "label": {
+      "ar": "2–3 أدوار",
+      "en": "2–3 roles"
+     },
+     "effect": {
+      "hours": [
+       10,
+       20
+      ]
+     }
+    },
+    {
+     "id": "many",
+     "icon": "account_tree",
+     "label": {
+      "ar": "صلاحيات مفصلة",
+      "en": "Detailed permissions"
+     },
+     "effect": {
+      "hours": [
+       24,
+       44
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "systems",
+   "kind": "multi",
+   "depth": "deep",
+   "module": "integrations",
+   "allowOther": true,
+   "title": {
+    "ar": "بأي أنظمة يرتبط؟",
+    "en": "Which systems to connect?"
+   },
+   "blueprintLabel": {
+    "ar": "الأنظمة",
+    "en": "Systems"
+   },
+   "options": [
+    {
+     "id": "erp",
+     "icon": "inventory",
+     "label": {
+      "ar": "ERP / محاسبة",
+      "en": "ERP / accounting"
+     },
+     "effect": {
+      "hours": [
+       20,
+       40
+      ]
+     }
+    },
+    {
+     "id": "crm",
+     "icon": "contacts",
+     "label": {
+      "ar": "CRM",
+      "en": "CRM"
+     },
+     "effect": {
+      "hours": [
+       14,
+       28
+      ]
+     }
+    },
+    {
+     "id": "shipping",
+     "icon": "local_shipping",
+     "label": {
+      "ar": "الشحن",
+      "en": "Shipping"
+     },
+     "effect": {
+      "hours": [
+       12,
+       24
+      ]
+     }
+    },
+    {
+     "id": "whatsapp",
+     "icon": "chat",
+     "label": {
+      "ar": "واتساب",
+      "en": "WhatsApp"
+     },
+     "effect": {
+      "hours": [
+       10,
+       20
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

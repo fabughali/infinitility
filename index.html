@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <!-- Replaced by `flutter build web --base-href`. Must start and end with "/". -->
+  <base href="/infinitility/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Infinitility Tech Ltd: hosting, web and app development, UI/UX, digital marketing, AI and cloud. إنفينيتيليتي للتقنية: شريكك الرقمي بلا حدود.">
+  <meta name="theme-color" content="#0A0F2C">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Infinitility">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Infinitility</title>
+  <link rel="manifest" href="manifest.json">
+
+  <style>
+    /* Keep these in sync with AppColors in lib/core/tokens.dart */
+    :root { --base: #0A0F2C; --ember: #FF7A3D; --ember-light: #FFB547; --cyan: #38D5F5; }
+    html, body { margin: 0; height: 100%; background: var(--base); }
+
+    #loader {
+      position: fixed; inset: 0; z-index: 9999;
+      display: flex; align-items: center; justify-content: center;
+      background: radial-gradient(circle at 50% 45%, #161E5C 0%, var(--base) 65%);
+      transition: opacity .6s cubic-bezier(.22,.68,.2,1), visibility .6s;
+    }
+    #loader.done { opacity: 0; visibility: hidden; }
+    #loader svg { width: min(220px, 50vw); overflow: visible; }
+    #loader .track { fill: none; stroke: rgba(255,255,255,.08); stroke-width: 3; }
+    #loader .draw {
+      fill: none; stroke: url(#g); stroke-width: 3.5; stroke-linecap: round;
+      stroke-dasharray: 90 400; filter: drop-shadow(0 0 6px rgba(255,122,61,.7));
+      animation: flow 1.8s cubic-bezier(.65,0,.35,1) infinite;
+    }
+    @keyframes flow { from { stroke-dashoffset: 490; } to { stroke-dashoffset: 0; } }
+    @media (prefers-reduced-motion: reduce) { #loader .draw { animation: none; stroke-dasharray: none; } }
+  </style>
+</head>
+<body>
+  <div id="loader" aria-hidden="true">
+    <svg viewBox="0 0 200 100">
+      <defs>
+        <linearGradient id="g" x1="0" x2="1">
+          <stop offset="0" stop-color="#38D5F5"/>
+          <stop offset=".6" stop-color="#FF7A3D"/>
+          <stop offset="1" stop-color="#FFB547"/>
+        </linearGradient>
+      </defs>
+      <path class="track" d="M100 50C80 18 28 18 28 50S80 82 100 50 172 18 172 50 120 82 100 50Z"/>
+      <path class="draw" pathLength="490" d="M100 50C80 18 28 18 28 50S80 82 100 50 172 18 172 50 120 82 100 50Z"/>
+    </svg>
+  </div>
+  <script>
+    // Fade the loader out on Flutter's first frame.
+    window.addEventListener('flutter-first-frame', function () {
+      var el = document.getElementById('loader');
+      el.classList.add('done');
+      setTimeout(function () { el.remove(); }, 700);
+    });
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

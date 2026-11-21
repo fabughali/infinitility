@@ -1,0 +1,540 @@
+{
+ "id": "ai",
+ "serviceId": "ai",
+ "version": 1,
+ "title": {
+  "ar": "مخطط الأتمتة والذكاء الاصطناعي",
+  "en": "Your AI and automation blueprint"
+ },
+ "intro": {
+  "ar": "اكتشف ما يمكن أتمتته في عملك ووفّر ساعات كل أسبوع.",
+  "en": "Find out what can be automated in your business and save hours every week."
+ },
+ "baseHours": [
+  20,
+  32
+ ],
+ "steps": [
+  {
+   "id": "automate",
+   "kind": "multi",
+   "title": {
+    "ar": "ماذا تريد أن تؤتمت؟",
+    "en": "What do you want to automate?"
+   },
+   "options": [
+    {
+     "id": "support",
+     "icon": "support_agent",
+     "label": {
+      "ar": "خدمة العملاء (روبوت محادثة)",
+      "en": "Customer service (chatbot)"
+     },
+     "effect": {
+      "hours": [
+       30,
+       60
+      ],
+      "unlocks": [
+       "bot"
+      ],
+      "monthly": [
+       40,
+       120
+      ]
+     }
+    },
+    {
+     "id": "whatsapp",
+     "icon": "chat",
+     "label": {
+      "ar": "روبوت واتساب",
+      "en": "WhatsApp bot"
+     },
+     "effect": {
+      "hours": [
+       30,
+       60
+      ],
+      "unlocks": [
+       "bot"
+      ],
+      "monthly": [
+       40,
+       150
+      ]
+     }
+    },
+    {
+     "id": "docs",
+     "icon": "description",
+     "label": {
+      "ar": "قراءة المستندات والفواتير",
+      "en": "Reading documents and invoices"
+     },
+     "effect": {
+      "hours": [
+       40,
+       80
+      ]
+     }
+    },
+    {
+     "id": "sales",
+     "icon": "trending_up",
+     "label": {
+      "ar": "متابعة المبيعات وCRM",
+      "en": "Sales follow-up and CRM"
+     },
+     "effect": {
+      "hours": [
+       30,
+       60
+      ]
+     }
+    },
+    {
+     "id": "knowledge",
+     "icon": "school",
+     "label": {
+      "ar": "مساعد معرفة داخلي",
+      "en": "Internal knowledge assistant"
+     },
+     "effect": {
+      "hours": [
+       30,
+       70
+      ],
+      "monthly": [
+       30,
+       100
+      ]
+     }
+    },
+    {
+     "id": "reports",
+     "icon": "summarize",
+     "label": {
+      "ar": "تقارير وملخصات تلقائية",
+      "en": "Automatic reports and summaries"
+     },
+     "effect": {
+      "hours": [
+       20,
+       40
+      ]
+     }
+    },
+    {
+     "id": "custom",
+     "icon": "auto_awesome",
+     "label": {
+      "ar": "ميزة ذكاء اصطناعي مخصصة",
+      "en": "A custom AI feature"
+     },
+     "effect": {
+      "hours": [
+       50,
+       120
+      ]
+     }
+    }
+   ],
+   "allowOther": true,
+   "allowUnsure": true,
+   "unsureSpread": 0.3,
+   "help": {
+    "ar": "اختر كل ما ينطبق",
+    "en": "Choose all that apply"
+   },
+   "blueprintLabel": {
+    "ar": "الأتمتة",
+    "en": "Automations"
+   }
+  },
+  {
+   "id": "volume",
+   "kind": "single",
+   "title": {
+    "ar": "كم طلب/محادثة شهرياً تقريباً؟",
+    "en": "Roughly how many requests a month?"
+   },
+   "options": [
+    {
+     "id": "v1",
+     "icon": "filter_1",
+     "label": {
+      "ar": "أقل من 1,000",
+      "en": "Under 1,000"
+     }
+    },
+    {
+     "id": "v10",
+     "icon": "filter_2",
+     "label": {
+      "ar": "1,000 – 10,000",
+      "en": "1,000 – 10,000"
+     },
+     "effect": {
+      "monthly": [
+       50,
+       150
+      ]
+     }
+    },
+    {
+     "id": "v10p",
+     "icon": "filter_9_plus",
+     "label": {
+      "ar": "أكثر من 10,000",
+      "en": "Over 10,000"
+     },
+     "effect": {
+      "monthly": [
+       150,
+       500
+      ],
+      "multiplier": 1.15
+     }
+    }
+   ],
+   "allowUnsure": true,
+   "blueprintLabel": {
+    "ar": "الحجم",
+    "en": "Volume"
+   }
+  },
+  {
+   "id": "connect",
+   "kind": "multi",
+   "title": {
+    "ar": "بأي أنظمة يتصل؟",
+    "en": "Which systems should it connect to?"
+   },
+   "options": [
+    {
+     "id": "website",
+     "icon": "language",
+     "label": {
+      "ar": "موقعي",
+      "en": "My website"
+     },
+     "effect": {
+      "hours": [
+       6,
+       12
+      ]
+     }
+    },
+    {
+     "id": "crm",
+     "icon": "contacts",
+     "label": {
+      "ar": "نظام CRM",
+      "en": "CRM"
+     },
+     "effect": {
+      "hours": [
+       12,
+       24
+      ]
+     }
+    },
+    {
+     "id": "sheets",
+     "icon": "table_chart",
+     "label": {
+      "ar": "جداول Google/Excel",
+      "en": "Google Sheets / Excel"
+     },
+     "effect": {
+      "hours": [
+       6,
+       12
+      ]
+     }
+    },
+    {
+     "id": "erp",
+     "icon": "inventory",
+     "label": {
+      "ar": "ERP / محاسبة",
+      "en": "ERP / accounting"
+     },
+     "effect": {
+      "hours": [
+       20,
+       40
+      ]
+     }
+    },
+    {
+     "id": "email",
+     "icon": "mail",
+     "label": {
+      "ar": "البريد الإلكتروني",
+      "en": "E-mail"
+     },
+     "effect": {
+      "hours": [
+       6,
+       12
+      ]
+     }
+    }
+   ],
+   "allowOther": true,
+   "blueprintLabel": {
+    "ar": "الأنظمة",
+    "en": "Systems"
+   }
+  },
+  {
+   "id": "handoff",
+   "kind": "single",
+   "title": {
+    "ar": "متى يتدخل موظف؟",
+    "en": "When should a person take over?"
+   },
+   "options": [
+    {
+     "id": "never",
+     "icon": "smart_toy",
+     "label": {
+      "ar": "الروبوت يتولى كل شيء",
+      "en": "The bot handles everything"
+     }
+    },
+    {
+     "id": "complex",
+     "icon": "support_agent",
+     "label": {
+      "ar": "في الحالات المعقدة",
+      "en": "For complex cases"
+     },
+     "effect": {
+      "hours": [
+       10,
+       20
+      ]
+     }
+    },
+    {
+     "id": "approve",
+     "icon": "task_alt",
+     "label": {
+      "ar": "موظف يوافق قبل الإرسال",
+      "en": "A person approves before sending"
+     },
+     "effect": {
+      "hours": [
+       12,
+       24
+      ]
+     }
+    }
+   ],
+   "depth": "deep",
+   "module": "bot",
+   "blueprintLabel": {
+    "ar": "التسليم للموظف",
+    "en": "Hand-off"
+   }
+  },
+  {
+   "id": "data",
+   "kind": "single",
+   "title": {
+    "ar": "أين بياناتك الآن؟",
+    "en": "Where is your data now?"
+   },
+   "options": [
+    {
+     "id": "organised",
+     "icon": "folder",
+     "label": {
+      "ar": "منظمة في أنظمة",
+      "en": "Organised in systems"
+     }
+    },
+    {
+     "id": "scattered",
+     "icon": "folder_open",
+     "label": {
+      "ar": "متفرقة (ملفات وبريد)",
+      "en": "Scattered (files and e-mail)"
+     },
+     "effect": {
+      "hours": [
+       16,
+       32
+      ]
+     }
+    },
+    {
+     "id": "none",
+     "icon": "help",
+     "label": {
+      "ar": "لا توجد بعد",
+      "en": "There is none yet"
+     },
+     "effect": {
+      "hours": [
+       8,
+       16
+      ]
+     }
+    }
+   ],
+   "allowUnsure": true,
+   "blueprintLabel": {
+    "ar": "البيانات",
+    "en": "Data"
+   }
+  },
+  {
+   "id": "languages",
+   "kind": "single",
+   "title": {
+    "ar": "بأي لغة؟",
+    "en": "Which languages?"
+   },
+   "options": [
+    {
+     "id": "ar",
+     "icon": "translate",
+     "label": {
+      "ar": "العربية",
+      "en": "Arabic"
+     }
+    },
+    {
+     "id": "en",
+     "icon": "translate",
+     "label": {
+      "ar": "الإنجليزية",
+      "en": "English"
+     }
+    },
+    {
+     "id": "both",
+     "icon": "g_translate",
+     "label": {
+      "ar": "العربية والإنجليزية",
+      "en": "Arabic and English"
+     },
+     "effect": {
+      "multiplier": 1.12
+     }
+    }
+   ],
+   "blueprintLabel": {
+    "ar": "اللغات",
+    "en": "Languages"
+   }
+  },
+  {
+   "id": "timeline",
+   "kind": "single",
+   "title": {
+    "ar": "متى تريد البدء؟",
+    "en": "When do you want to start?"
+   },
+   "options": [
+    {
+     "id": "now",
+     "icon": "bolt",
+     "label": {
+      "ar": "فوراً",
+      "en": "Right away"
+     },
+     "effect": {
+      "multiplier": 1.15
+     }
+    },
+    {
+     "id": "month",
+     "icon": "schedule",
+     "label": {
+      "ar": "خلال شهر",
+      "en": "Within a month"
+     }
+    },
+    {
+     "id": "quarter",
+     "icon": "date_range",
+     "label": {
+      "ar": "خلال 3 أشهر",
+      "en": "Within 3 months"
+     }
+    },
+    {
+     "id": "flexible",
+     "icon": "all_inclusive",
+     "label": {
+      "ar": "مرن",
+      "en": "Flexible"
+     }
+    }
+   ],
+   "blueprintLabel": {
+    "ar": "الموعد",
+    "en": "Timeline"
+   }
+  },
+  {
+   "id": "budget",
+   "kind": "budget",
+   "title": {
+    "ar": "هل لديك ميزانية في ذهنك؟",
+    "en": "Budget in mind?"
+   },
+   "options": [
+    {
+     "id": "b3",
+     "icon": "savings",
+     "label": {
+      "ar": "أقل من 3,000$",
+      "en": "Under $3,000"
+     },
+     "budgetUsd": 3000
+    },
+    {
+     "id": "b10",
+     "icon": "savings",
+     "label": {
+      "ar": "3,000$ – 10,000$",
+      "en": "$3,000 – $10,000"
+     },
+     "budgetUsd": 10000
+    },
+    {
+     "id": "b10p",
+     "icon": "savings",
+     "label": {
+      "ar": "أكثر من 10,000$",
+      "en": "Over $10,000"
+     },
+     "budgetUsd": 1000000
+    },
+    {
+     "id": "na",
+     "icon": "visibility_off",
+     "label": {
+      "ar": "أفضل عدم الإجابة",
+      "en": "Prefer not to say"
+     }
+    }
+   ],
+   "optional": true,
+   "help": {
+    "ar": "اختياري — يساعدنا على اقتراح الخيار الأنسب",
+    "en": "Optional, helps us recommend the right option"
+   },
+   "blueprintLabel": {
+    "ar": "الميزانية",
+    "en": "Budget"
+   }
+  }
+ ]
+}

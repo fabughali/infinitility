@@ -1,0 +1,497 @@
+{
+ "id": "social",
+ "serviceId": "social",
+ "version": 1,
+ "title": {
+  "ar": "خطة السوشيال ميديا والمحتوى",
+  "en": "Your social media and content plan"
+ },
+ "intro": {
+  "ar": "اختر منصاتك ونوع المحتوى، وسنقترح باقة شهرية تناسبك.",
+  "en": "Pick your platforms and content, and we will suggest a monthly package that fits."
+ },
+ "baseHours": [
+  6,
+  12
+ ],
+ "steps": [
+  {
+   "id": "platforms",
+   "kind": "multi",
+   "title": {
+    "ar": "على أي منصات؟",
+    "en": "Which platforms?"
+   },
+   "options": [
+    {
+     "id": "instagram",
+     "icon": "photo_camera",
+     "label": {
+      "ar": "إنستغرام",
+      "en": "Instagram"
+     },
+     "effect": {
+      "monthly": [
+       150,
+       300
+      ]
+     }
+    },
+    {
+     "id": "tiktok",
+     "icon": "music_note",
+     "label": {
+      "ar": "تيك توك",
+      "en": "TikTok"
+     },
+     "effect": {
+      "monthly": [
+       200,
+       400
+      ]
+     }
+    },
+    {
+     "id": "facebook",
+     "icon": "thumb_up",
+     "label": {
+      "ar": "فيسبوك",
+      "en": "Facebook"
+     },
+     "effect": {
+      "monthly": [
+       100,
+       200
+      ]
+     }
+    },
+    {
+     "id": "linkedin",
+     "icon": "work",
+     "label": {
+      "ar": "لينكدإن",
+      "en": "LinkedIn"
+     },
+     "effect": {
+      "monthly": [
+       150,
+       300
+      ]
+     }
+    },
+    {
+     "id": "x",
+     "icon": "tag",
+     "label": {
+      "ar": "إكس (تويتر)",
+      "en": "X (Twitter)"
+     },
+     "effect": {
+      "monthly": [
+       100,
+       200
+      ]
+     }
+    },
+    {
+     "id": "snapchat",
+     "icon": "photo",
+     "label": {
+      "ar": "سناب شات",
+      "en": "Snapchat"
+     },
+     "effect": {
+      "monthly": [
+       100,
+       250
+      ]
+     }
+    },
+    {
+     "id": "youtube",
+     "icon": "smart_display",
+     "label": {
+      "ar": "يوتيوب",
+      "en": "YouTube"
+     },
+     "effect": {
+      "monthly": [
+       250,
+       600
+      ]
+     }
+    }
+   ],
+   "allowOther": true,
+   "allowUnsure": true,
+   "help": {
+    "ar": "اختر كل ما ينطبق",
+    "en": "Choose all that apply"
+   },
+   "blueprintLabel": {
+    "ar": "المنصات",
+    "en": "Platforms"
+   }
+  },
+  {
+   "id": "content",
+   "kind": "multi",
+   "title": {
+    "ar": "أي نوع من المحتوى؟",
+    "en": "What kind of content?"
+   },
+   "options": [
+    {
+     "id": "posts",
+     "icon": "image",
+     "label": {
+      "ar": "تصاميم ومنشورات",
+      "en": "Designed posts"
+     }
+    },
+    {
+     "id": "reels",
+     "icon": "movie",
+     "label": {
+      "ar": "ريلز وفيديو قصير",
+      "en": "Reels and short video"
+     },
+     "effect": {
+      "monthly": [
+       200,
+       500
+      ]
+     }
+    },
+    {
+     "id": "stories",
+     "icon": "auto_stories",
+     "label": {
+      "ar": "ستوري يومية",
+      "en": "Daily stories"
+     },
+     "effect": {
+      "monthly": [
+       100,
+       250
+      ]
+     }
+    },
+    {
+     "id": "photo",
+     "icon": "photo_camera",
+     "label": {
+      "ar": "تصوير احترافي",
+      "en": "Professional photography"
+     },
+     "effect": {
+      "monthly": [
+       200,
+       500
+      ]
+     }
+    },
+    {
+     "id": "ugc",
+     "icon": "record_voice_over",
+     "label": {
+      "ar": "محتوى مؤثرين",
+      "en": "Influencer / UGC content"
+     },
+     "effect": {
+      "monthly": [
+       300,
+       800
+      ]
+     }
+    }
+   ],
+   "allowOther": true,
+   "blueprintLabel": {
+    "ar": "المحتوى",
+    "en": "Content"
+   }
+  },
+  {
+   "id": "frequency",
+   "kind": "single",
+   "title": {
+    "ar": "كم منشوراً شهرياً؟",
+    "en": "How many posts a month?"
+   },
+   "options": [
+    {
+     "id": "p8",
+     "icon": "filter_1",
+     "label": {
+      "ar": "8 منشورات",
+      "en": "8 posts"
+     }
+    },
+    {
+     "id": "p16",
+     "icon": "filter_2",
+     "label": {
+      "ar": "16 منشوراً",
+      "en": "16 posts"
+     },
+     "effect": {
+      "monthly": [
+       150,
+       300
+      ]
+     }
+    },
+    {
+     "id": "p30",
+     "icon": "filter_9_plus",
+     "label": {
+      "ar": "يومياً (30)",
+      "en": "Daily (30)"
+     },
+     "effect": {
+      "monthly": [
+       350,
+       700
+      ]
+     }
+    }
+   ],
+   "allowUnsure": true,
+   "blueprintLabel": {
+    "ar": "التكرار",
+    "en": "Frequency"
+   }
+  },
+  {
+   "id": "community",
+   "kind": "single",
+   "title": {
+    "ar": "إدارة التعليقات والرسائل؟",
+    "en": "Comment and inbox management?"
+   },
+   "options": [
+    {
+     "id": "no",
+     "icon": "cancel",
+     "label": {
+      "ar": "لا، سأتولاها",
+      "en": "No, I will handle it"
+     }
+    },
+    {
+     "id": "business",
+     "icon": "schedule",
+     "label": {
+      "ar": "خلال ساعات العمل",
+      "en": "During business hours"
+     },
+     "effect": {
+      "monthly": [
+       150,
+       300
+      ]
+     }
+    },
+    {
+     "id": "always",
+     "icon": "all_inclusive",
+     "label": {
+      "ar": "يومياً حتى المساء",
+      "en": "Daily into the evening"
+     },
+     "effect": {
+      "monthly": [
+       300,
+       600
+      ]
+     }
+    }
+   ],
+   "blueprintLabel": {
+    "ar": "إدارة المجتمع",
+    "en": "Community"
+   }
+  },
+  {
+   "id": "brand_ready",
+   "kind": "single",
+   "title": {
+    "ar": "هل هويتك البصرية جاهزة؟",
+    "en": "Is your brand identity ready?"
+   },
+   "options": [
+    {
+     "id": "yes",
+     "icon": "check_circle",
+     "label": {
+      "ar": "نعم",
+      "en": "Yes"
+     }
+    },
+    {
+     "id": "no",
+     "icon": "palette",
+     "label": {
+      "ar": "لا، أحتاج هوية",
+      "en": "No, I need one"
+     },
+     "effect": {
+      "hours": [
+       30,
+       60
+      ]
+     }
+    }
+   ],
+   "blueprintLabel": {
+    "ar": "الهوية",
+    "en": "Brand"
+   }
+  },
+  {
+   "id": "languages",
+   "kind": "single",
+   "title": {
+    "ar": "بأي لغة؟",
+    "en": "Which languages?"
+   },
+   "options": [
+    {
+     "id": "ar",
+     "icon": "translate",
+     "label": {
+      "ar": "العربية",
+      "en": "Arabic"
+     }
+    },
+    {
+     "id": "en",
+     "icon": "translate",
+     "label": {
+      "ar": "الإنجليزية",
+      "en": "English"
+     }
+    },
+    {
+     "id": "both",
+     "icon": "g_translate",
+     "label": {
+      "ar": "العربية والإنجليزية",
+      "en": "Arabic and English"
+     },
+     "effect": {
+      "multiplier": 1.12
+     }
+    }
+   ],
+   "blueprintLabel": {
+    "ar": "اللغات",
+    "en": "Languages"
+   }
+  },
+  {
+   "id": "timeline",
+   "kind": "single",
+   "title": {
+    "ar": "متى تريد البدء؟",
+    "en": "When do you want to start?"
+   },
+   "options": [
+    {
+     "id": "now",
+     "icon": "bolt",
+     "label": {
+      "ar": "فوراً",
+      "en": "Right away"
+     },
+     "effect": {
+      "multiplier": 1.15
+     }
+    },
+    {
+     "id": "month",
+     "icon": "schedule",
+     "label": {
+      "ar": "خلال شهر",
+      "en": "Within a month"
+     }
+    },
+    {
+     "id": "quarter",
+     "icon": "date_range",
+     "label": {
+      "ar": "خلال 3 أشهر",
+      "en": "Within 3 months"
+     }
+    },
+    {
+     "id": "flexible",
+     "icon": "all_inclusive",
+     "label": {
+      "ar": "مرن",
+      "en": "Flexible"
+     }
+    }
+   ],
+   "blueprintLabel": {
+    "ar": "الموعد",
+    "en": "Timeline"
+   }
+  },
+  {
+   "id": "budget",
+   "kind": "budget",
+   "title": {
+    "ar": "هل لديك ميزانية في ذهنك؟",
+    "en": "Budget in mind?"
+   },
+   "options": [
+    {
+     "id": "s1",
+     "icon": "savings",
+     "label": {
+      "ar": "أقل من 500$ شهرياً",
+      "en": "Under $500 / month"
+     },
+     "budgetUsd": 6000
+    },
+    {
+     "id": "s2",
+     "icon": "savings",
+     "label": {
+      "ar": "500$ – 1,500$ شهرياً",
+      "en": "$500 – $1,500 / month"
+     },
+     "budgetUsd": 18000
+    },
+    {
+     "id": "s3",
+     "icon": "savings",
+     "label": {
+      "ar": "أكثر من 1,500$ شهرياً",
+      "en": "Over $1,500 / month"
+     },
+     "budgetUsd": 1000000
+    },
+    {
+     "id": "na",
+     "icon": "visibility_off",
+     "label": {
+      "ar": "أفضل عدم الإجابة",
+      "en": "Prefer not to say"
+     }
+    }
+   ],
+   "optional": true,
+   "help": {
+    "ar": "اختياري — يساعدنا على اقتراح الخيار الأنسب",
+    "en": "Optional, helps us recommend the right option"
+   },
+   "blueprintLabel": {
+    "ar": "الميزانية",
+    "en": "Budget"
+   }
+  }
+ ]
+}

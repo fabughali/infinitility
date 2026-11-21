@@ -1,0 +1,275 @@
+{
+ "id": "router",
+ "serviceId": "router",
+ "version": 1,
+ "title": {
+  "ar": "ساعدني في الاختيار",
+  "en": "Help me choose"
+ },
+ "intro": {
+  "ar": "ثلاثة أسئلة وسنوجهك إلى الخدمة الأنسب.",
+  "en": "Three questions and we will point you to the right service."
+ },
+ "baseHours": [
+  0,
+  0
+ ],
+ "steps": [
+  {
+   "id": "goal",
+   "kind": "single",
+   "title": {
+    "ar": "ما الذي تريد تحقيقه؟",
+    "en": "What do you want to achieve?"
+   },
+   "options": [
+    {
+     "id": "online",
+     "icon": "language",
+     "label": {
+      "ar": "أن أكون موجوداً أونلاين",
+      "en": "Get my business online"
+     },
+     "effect": {
+      "route": {
+       "hosting": 2,
+       "development": 2,
+       "design": 1
+      }
+     }
+    },
+    {
+     "id": "sell",
+     "icon": "shopping_cart",
+     "label": {
+      "ar": "أن أبيع أونلاين",
+      "en": "Sell online"
+     },
+     "effect": {
+      "route": {
+       "development": 3,
+       "marketing": 1
+      }
+     }
+    },
+    {
+     "id": "customers",
+     "icon": "person_add",
+     "label": {
+      "ar": "أن أجذب عملاء أكثر",
+      "en": "Get more customers"
+     },
+     "effect": {
+      "route": {
+       "marketing": 3,
+       "social": 2
+      }
+     }
+    },
+    {
+     "id": "time",
+     "icon": "schedule",
+     "label": {
+      "ar": "أن أوفر وقت فريقي",
+      "en": "Save my team time"
+     },
+     "effect": {
+      "route": {
+       "ai": 3,
+       "api": 1
+      }
+     }
+    },
+    {
+     "id": "look",
+     "icon": "palette",
+     "label": {
+      "ar": "أن أبدو احترافياً",
+      "en": "Look professional"
+     },
+     "effect": {
+      "route": {
+       "design": 3,
+       "social": 1
+      }
+     }
+    },
+    {
+     "id": "tech",
+     "icon": "dns",
+     "label": {
+      "ar": "أن تعمل أنظمتي بثبات",
+      "en": "Keep my systems running"
+     },
+     "effect": {
+      "route": {
+       "cloud": 3,
+       "hosting": 1
+      }
+     }
+    }
+   ],
+   "allowOther": true,
+   "blueprintLabel": {
+    "ar": "الهدف",
+    "en": "Goal"
+   }
+  },
+  {
+   "id": "have",
+   "kind": "multi",
+   "title": {
+    "ar": "ما الموجود لديك؟",
+    "en": "What do you already have?"
+   },
+   "options": [
+    {
+     "id": "nothing",
+     "icon": "crop_free",
+     "label": {
+      "ar": "لا شيء بعد",
+      "en": "Nothing yet"
+     },
+     "effect": {
+      "route": {
+       "design": 1,
+       "hosting": 1,
+       "development": 1
+      }
+     }
+    },
+    {
+     "id": "logo",
+     "icon": "auto_fix_high",
+     "label": {
+      "ar": "شعار وهوية",
+      "en": "A logo and brand"
+     },
+     "effect": {
+      "route": {
+       "development": 1,
+       "social": 1
+      }
+     }
+    },
+    {
+     "id": "website",
+     "icon": "web",
+     "label": {
+      "ar": "موقع",
+      "en": "A website"
+     },
+     "effect": {
+      "route": {
+       "marketing": 2,
+       "ai": 1
+      }
+     }
+    },
+    {
+     "id": "app",
+     "icon": "phone_iphone",
+     "label": {
+      "ar": "تطبيق",
+      "en": "An app"
+     },
+     "effect": {
+      "route": {
+       "api": 1,
+       "cloud": 1,
+       "marketing": 1
+      }
+     }
+    },
+    {
+     "id": "social",
+     "icon": "campaign",
+     "label": {
+      "ar": "حسابات سوشيال",
+      "en": "Social accounts"
+     },
+     "effect": {
+      "route": {
+       "social": 2,
+       "marketing": 1
+      }
+     }
+    }
+   ],
+   "blueprintLabel": {
+    "ar": "الموجود",
+    "en": "Existing"
+   }
+  },
+  {
+   "id": "priority",
+   "kind": "single",
+   "title": {
+    "ar": "ما الأهم الآن؟",
+    "en": "What matters most right now?"
+   },
+   "options": [
+    {
+     "id": "fast",
+     "icon": "bolt",
+     "label": {
+      "ar": "السرعة",
+      "en": "Speed"
+     },
+     "effect": {
+      "route": {
+       "hosting": 1,
+       "design": 1
+      }
+     }
+    },
+    {
+     "id": "growth",
+     "icon": "trending_up",
+     "label": {
+      "ar": "النمو",
+      "en": "Growth"
+     },
+     "effect": {
+      "route": {
+       "marketing": 2,
+       "social": 1
+      }
+     }
+    },
+    {
+     "id": "quality",
+     "icon": "workspace_premium",
+     "label": {
+      "ar": "الجودة",
+      "en": "Quality"
+     },
+     "effect": {
+      "route": {
+       "development": 1,
+       "design": 1
+      }
+     }
+    },
+    {
+     "id": "cost",
+     "icon": "savings",
+     "label": {
+      "ar": "خفض التكاليف",
+      "en": "Lower costs"
+     },
+     "effect": {
+      "route": {
+       "ai": 2,
+       "cloud": 1
+      }
+     }
+    }
+   ],
+   "blueprintLabel": {
+    "ar": "الأولوية",
+    "en": "Priority"
+   }
+  }
+ ]
+}

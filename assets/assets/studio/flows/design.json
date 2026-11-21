@@ -1,0 +1,595 @@
+{
+ "id": "design",
+ "serviceId": "design",
+ "version": 1,
+ "title": {
+  "ar": "مخطط هويتك وتصميمك",
+  "en": "Your brand and design blueprint"
+ },
+ "intro": {
+  "ar": "من الشعار إلى الواجهات: أخبرنا بما تحتاجه وسنقترح النطاق المناسب.",
+  "en": "From logo to screens: tell us what you need and we will shape the right scope."
+ },
+ "baseHours": [
+  12,
+  20
+ ],
+ "steps": [
+  {
+   "id": "need",
+   "kind": "single",
+   "title": {
+    "ar": "ما الذي تحتاجه؟",
+    "en": "What do you need?"
+   },
+   "options": [
+    {
+     "id": "logo",
+     "icon": "auto_fix_high",
+     "label": {
+      "ar": "شعار",
+      "en": "A logo"
+     },
+     "effect": {
+      "hours": [
+       16,
+       30
+      ],
+      "tags": [
+       "brand"
+      ]
+     }
+    },
+    {
+     "id": "identity",
+     "icon": "palette",
+     "label": {
+      "ar": "هوية بصرية كاملة",
+      "en": "A full brand identity"
+     },
+     "effect": {
+      "hours": [
+       40,
+       80
+      ],
+      "tags": [
+       "brand"
+      ]
+     },
+     "default": true
+    },
+    {
+     "id": "uiux",
+     "icon": "devices",
+     "label": {
+      "ar": "تصميم واجهات تطبيق أو موقع",
+      "en": "UI/UX for an app or website"
+     },
+     "effect": {
+      "hours": [
+       40,
+       100
+      ],
+      "tags": [
+       "ui"
+      ]
+     }
+    },
+    {
+     "id": "redesign",
+     "icon": "autorenew",
+     "label": {
+      "ar": "إعادة تصميم ما لدي",
+      "en": "Redesign what I have"
+     },
+     "effect": {
+      "hours": [
+       30,
+       70
+      ],
+      "tags": [
+       "ui",
+       "brand"
+      ]
+     }
+    }
+   ],
+   "allowUnsure": true,
+   "unsureSpread": 0.25,
+   "blueprintLabel": {
+    "ar": "الحاجة",
+    "en": "Need"
+   }
+  },
+  {
+   "id": "assets",
+   "kind": "single",
+   "title": {
+    "ar": "ما الموجود لديك حالياً؟",
+    "en": "What do you already have?"
+   },
+   "options": [
+    {
+     "id": "nothing",
+     "icon": "crop_free",
+     "label": {
+      "ar": "لا شيء بعد",
+      "en": "Nothing yet"
+     },
+     "effect": {
+      "hours": [
+       6,
+       12
+      ]
+     }
+    },
+    {
+     "id": "logo_only",
+     "icon": "image",
+     "label": {
+      "ar": "شعار فقط",
+      "en": "Only a logo"
+     }
+    },
+    {
+     "id": "guide",
+     "icon": "menu_book",
+     "label": {
+      "ar": "دليل هوية",
+      "en": "A brand guide"
+     },
+     "effect": {
+      "multiplier": 0.85
+     }
+    }
+   ],
+   "blueprintLabel": {
+    "ar": "الموجود",
+    "en": "Existing"
+   }
+  },
+  {
+   "id": "deliverables",
+   "kind": "multi",
+   "title": {
+    "ar": "ما المخرجات التي تريدها؟",
+    "en": "Which deliverables?"
+   },
+   "options": [
+    {
+     "id": "palette",
+     "icon": "palette",
+     "label": {
+      "ar": "الألوان والخطوط",
+      "en": "Colours and typography"
+     },
+     "effect": {
+      "hours": [
+       6,
+       10
+      ]
+     }
+    },
+    {
+     "id": "guidelines",
+     "icon": "menu_book",
+     "label": {
+      "ar": "دليل استخدام الهوية",
+      "en": "Brand guidelines"
+     },
+     "effect": {
+      "hours": [
+       12,
+       24
+      ]
+     }
+    },
+    {
+     "id": "social",
+     "icon": "campaign",
+     "label": {
+      "ar": "قوالب سوشيال ميديا",
+      "en": "Social media kit"
+     },
+     "effect": {
+      "hours": [
+       10,
+       20
+      ]
+     }
+    },
+    {
+     "id": "stationery",
+     "icon": "description",
+     "label": {
+      "ar": "مطبوعات وبطاقات",
+      "en": "Stationery and cards"
+     },
+     "effect": {
+      "hours": [
+       8,
+       16
+      ]
+     }
+    },
+    {
+     "id": "packaging",
+     "icon": "inventory_2",
+     "label": {
+      "ar": "تغليف",
+      "en": "Packaging"
+     },
+     "effect": {
+      "hours": [
+       16,
+       40
+      ]
+     }
+    },
+    {
+     "id": "screens",
+     "icon": "phone_iphone",
+     "label": {
+      "ar": "شاشات التطبيق/الموقع",
+      "en": "App or website screens"
+     },
+     "effect": {
+      "hours": [
+       30,
+       80
+      ],
+      "unlocks": [
+       "screens"
+      ]
+     }
+    },
+    {
+     "id": "prototype",
+     "icon": "touch_app",
+     "label": {
+      "ar": "نموذج تفاعلي",
+      "en": "Clickable prototype"
+     },
+     "effect": {
+      "hours": [
+       12,
+       30
+      ]
+     }
+    },
+    {
+     "id": "motion",
+     "icon": "animation",
+     "label": {
+      "ar": "حركة وشعار متحرك",
+      "en": "Motion and animated logo"
+     },
+     "effect": {
+      "hours": [
+       16,
+       36
+      ]
+     }
+    }
+   ],
+   "allowOther": true,
+   "help": {
+    "ar": "اختر كل ما ينطبق",
+    "en": "Choose all that apply"
+   },
+   "blueprintLabel": {
+    "ar": "المخرجات",
+    "en": "Deliverables"
+   }
+  },
+  {
+   "id": "style",
+   "kind": "single",
+   "title": {
+    "ar": "أي أسلوب يناسبك؟",
+    "en": "Which style fits you?"
+   },
+   "options": [
+    {
+     "id": "minimal",
+     "icon": "crop_square",
+     "label": {
+      "ar": "بسيط وأنيق",
+      "en": "Minimal and elegant"
+     }
+    },
+    {
+     "id": "bold",
+     "icon": "bolt",
+     "label": {
+      "ar": "جريء وملوّن",
+      "en": "Bold and colourful"
+     }
+    },
+    {
+     "id": "luxury",
+     "icon": "diamond",
+     "label": {
+      "ar": "فاخر",
+      "en": "Luxury"
+     }
+    },
+    {
+     "id": "playful",
+     "icon": "mood",
+     "label": {
+      "ar": "مرح وودود",
+      "en": "Playful and friendly"
+     }
+    }
+   ],
+   "allowOther": true,
+   "allowUnsure": true,
+   "blueprintLabel": {
+    "ar": "الأسلوب",
+    "en": "Style"
+   }
+  },
+  {
+   "id": "revisions",
+   "kind": "single",
+   "title": {
+    "ar": "كم جولة تعديل تتوقع؟",
+    "en": "How many revision rounds?"
+   },
+   "options": [
+    {
+     "id": "two",
+     "icon": "looks_two",
+     "label": {
+      "ar": "جولتان",
+      "en": "Two"
+     }
+    },
+    {
+     "id": "three",
+     "icon": "looks_3",
+     "label": {
+      "ar": "ثلاث",
+      "en": "Three"
+     },
+     "effect": {
+      "hours": [
+       6,
+       12
+      ]
+     }
+    },
+    {
+     "id": "unlimited",
+     "icon": "all_inclusive",
+     "label": {
+      "ar": "حتى أرضى تماماً",
+      "en": "Until I am fully happy"
+     },
+     "effect": {
+      "hours": [
+       14,
+       30
+      ]
+     }
+    }
+   ],
+   "blueprintLabel": {
+    "ar": "التعديلات",
+    "en": "Revisions"
+   }
+  },
+  {
+   "id": "screen_count",
+   "kind": "single",
+   "title": {
+    "ar": "كم عدد الشاشات تقريباً؟",
+    "en": "Roughly how many screens?"
+   },
+   "options": [
+    {
+     "id": "s10",
+     "icon": "filter_1",
+     "label": {
+      "ar": "حتى 10",
+      "en": "Up to 10"
+     },
+     "effect": {
+      "hours": [
+       0,
+       10
+      ]
+     }
+    },
+    {
+     "id": "s30",
+     "icon": "filter_3",
+     "label": {
+      "ar": "10 – 30",
+      "en": "10 – 30"
+     },
+     "effect": {
+      "hours": [
+       30,
+       60
+      ]
+     }
+    },
+    {
+     "id": "s60",
+     "icon": "filter_9_plus",
+     "label": {
+      "ar": "أكثر من 30",
+      "en": "More than 30"
+     },
+     "effect": {
+      "hours": [
+       70,
+       140
+      ]
+     }
+    }
+   ],
+   "depth": "deep",
+   "module": "screens",
+   "blueprintLabel": {
+    "ar": "الشاشات",
+    "en": "Screens"
+   }
+  },
+  {
+   "id": "languages",
+   "kind": "single",
+   "title": {
+    "ar": "بأي لغة؟",
+    "en": "Which languages?"
+   },
+   "options": [
+    {
+     "id": "ar",
+     "icon": "translate",
+     "label": {
+      "ar": "العربية",
+      "en": "Arabic"
+     }
+    },
+    {
+     "id": "en",
+     "icon": "translate",
+     "label": {
+      "ar": "الإنجليزية",
+      "en": "English"
+     }
+    },
+    {
+     "id": "both",
+     "icon": "g_translate",
+     "label": {
+      "ar": "العربية والإنجليزية",
+      "en": "Arabic and English"
+     },
+     "effect": {
+      "multiplier": 1.12
+     }
+    }
+   ],
+   "blueprintLabel": {
+    "ar": "اللغات",
+    "en": "Languages"
+   }
+  },
+  {
+   "id": "timeline",
+   "kind": "single",
+   "title": {
+    "ar": "متى تريد البدء؟",
+    "en": "When do you want to start?"
+   },
+   "options": [
+    {
+     "id": "now",
+     "icon": "bolt",
+     "label": {
+      "ar": "فوراً",
+      "en": "Right away"
+     },
+     "effect": {
+      "multiplier": 1.15
+     }
+    },
+    {
+     "id": "month",
+     "icon": "schedule",
+     "label": {
+      "ar": "خلال شهر",
+      "en": "Within a month"
+     }
+    },
+    {
+     "id": "quarter",
+     "icon": "date_range",
+     "label": {
+      "ar": "خلال 3 أشهر",
+      "en": "Within 3 months"
+     }
+    },
+    {
+     "id": "flexible",
+     "icon": "all_inclusive",
+     "label": {
+      "ar": "مرن",
+      "en": "Flexible"
+     }
+    }
+   ],
+   "blueprintLabel": {
+    "ar": "الموعد",
+    "en": "Timeline"
+   }
+  },
+  {
+   "id": "budget",
+   "kind": "budget",
+   "title": {
+    "ar": "هل لديك ميزانية في ذهنك؟",
+    "en": "Budget in mind?"
+   },
+   "options": [
+    {
+     "id": "b1",
+     "icon": "savings",
+     "label": {
+      "ar": "أقل من 1,000$",
+      "en": "Under $1,000"
+     },
+     "budgetUsd": 1000
+    },
+    {
+     "id": "b3",
+     "icon": "savings",
+     "label": {
+      "ar": "1,000$ – 3,000$",
+      "en": "$1,000 – $3,000"
+     },
+     "budgetUsd": 3000
+    },
+    {
+     "id": "b8",
+     "icon": "savings",
+     "label": {
+      "ar": "3,000$ – 8,000$",
+      "en": "$3,000 – $8,000"
+     },
+     "budgetUsd": 8000
+    },
+    {
+     "id": "b8p",
+     "icon": "savings",
+     "label": {
+      "ar": "أكثر من 8,000$",
+      "en": "Over $8,000"
+     },
+     "budgetUsd": 1000000
+    },
+    {
+     "id": "na",
+     "icon": "visibility_off",
+     "label": {
+      "ar": "أفضل عدم الإجابة",
+      "en": "Prefer not to say"
+     }
+    }
+   ],
+   "optional": true,
+   "help": {
+    "ar": "اختياري — يساعدنا على اقتراح الخيار الأنسب",
+    "en": "Optional, helps us recommend the right option"
+   },
+   "blueprintLabel": {
+    "ar": "الميزانية",
+    "en": "Budget"
+   }
+  }
+ ]
+}

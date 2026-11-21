@@ -1,0 +1,531 @@
+{
+ "id": "marketing",
+ "serviceId": "marketing",
+ "version": 1,
+ "title": {
+  "ar": "خطة تسويقك الرقمي",
+  "en": "Your digital marketing plan"
+ },
+ "intro": {
+  "ar": "أخبرنا بهدفك وسنقترح القنوات والميزانية الشهرية المناسبة.",
+  "en": "Tell us your goal and we will suggest the right channels and monthly budget."
+ },
+ "baseHours": [
+  8,
+  16
+ ],
+ "steps": [
+  {
+   "id": "goal",
+   "kind": "multi",
+   "title": {
+    "ar": "ما هدفك الأول؟",
+    "en": "What is your main goal?"
+   },
+   "options": [
+    {
+     "id": "leads",
+     "icon": "person_add",
+     "label": {
+      "ar": "عملاء محتملون",
+      "en": "More leads"
+     },
+     "effect": {
+      "tags": [
+       "leads"
+      ]
+     }
+    },
+    {
+     "id": "sales",
+     "icon": "shopping_cart",
+     "label": {
+      "ar": "مبيعات أونلاين",
+      "en": "Online sales"
+     },
+     "effect": {
+      "tags": [
+       "sales"
+      ]
+     }
+    },
+    {
+     "id": "awareness",
+     "icon": "campaign",
+     "label": {
+      "ar": "انتشار العلامة",
+      "en": "Brand awareness"
+     }
+    },
+    {
+     "id": "local",
+     "icon": "storefront",
+     "label": {
+      "ar": "زيارات للمحل",
+      "en": "Visits to my shop"
+     }
+    }
+   ],
+   "allowOther": true,
+   "blueprintLabel": {
+    "ar": "الهدف",
+    "en": "Goal"
+   }
+  },
+  {
+   "id": "channels",
+   "kind": "multi",
+   "title": {
+    "ar": "أي قنوات تفكر بها؟",
+    "en": "Which channels?"
+   },
+   "options": [
+    {
+     "id": "seo",
+     "icon": "manage_search",
+     "label": {
+      "ar": "تحسين محركات البحث SEO",
+      "en": "SEO"
+     },
+     "effect": {
+      "monthly": [
+       400,
+       900
+      ]
+     }
+    },
+    {
+     "id": "google",
+     "icon": "ads_click",
+     "label": {
+      "ar": "إعلانات جوجل",
+      "en": "Google Ads"
+     },
+     "effect": {
+      "monthly": [
+       300,
+       700
+      ]
+     }
+    },
+    {
+     "id": "meta",
+     "icon": "thumb_up",
+     "label": {
+      "ar": "إعلانات ميتا (فيسبوك وإنستغرام)",
+      "en": "Meta ads (Facebook & Instagram)"
+     },
+     "effect": {
+      "monthly": [
+       300,
+       700
+      ]
+     }
+    },
+    {
+     "id": "tiktok",
+     "icon": "music_note",
+     "label": {
+      "ar": "إعلانات تيك توك",
+      "en": "TikTok ads"
+     },
+     "effect": {
+      "monthly": [
+       300,
+       700
+      ]
+     }
+    },
+    {
+     "id": "email",
+     "icon": "mail",
+     "label": {
+      "ar": "التسويق بالبريد",
+      "en": "E-mail marketing"
+     },
+     "effect": {
+      "monthly": [
+       200,
+       500
+      ]
+     }
+    },
+    {
+     "id": "content",
+     "icon": "article",
+     "label": {
+      "ar": "محتوى ومدونة",
+      "en": "Content and blog"
+     },
+     "effect": {
+      "monthly": [
+       300,
+       800
+      ]
+     }
+    }
+   ],
+   "allowOther": true,
+   "allowUnsure": true,
+   "unsureSpread": 0.25,
+   "help": {
+    "ar": "اختر كل ما ينطبق أو «لست متأكداً» لنقترح نحن",
+    "en": "Choose all that apply, or “Not sure” and we will suggest"
+   },
+   "blueprintLabel": {
+    "ar": "القنوات",
+    "en": "Channels"
+   }
+  },
+  {
+   "id": "website",
+   "kind": "single",
+   "title": {
+    "ar": "هل لديك موقع؟",
+    "en": "Do you have a website?"
+   },
+   "options": [
+    {
+     "id": "yes_good",
+     "icon": "check_circle",
+     "label": {
+      "ar": "نعم وجاهز",
+      "en": "Yes, and it works well"
+     }
+    },
+    {
+     "id": "yes_old",
+     "icon": "build",
+     "label": {
+      "ar": "نعم لكنه يحتاج تحسيناً",
+      "en": "Yes, but it needs work"
+     },
+     "effect": {
+      "hours": [
+       20,
+       40
+      ]
+     }
+    },
+    {
+     "id": "no",
+     "icon": "cancel",
+     "label": {
+      "ar": "لا",
+      "en": "No"
+     },
+     "effect": {
+      "hours": [
+       40,
+       80
+      ],
+      "tags": [
+       "needs_site"
+      ]
+     }
+    }
+   ],
+   "blueprintLabel": {
+    "ar": "الموقع",
+    "en": "Website"
+   }
+  },
+  {
+   "id": "ad_budget",
+   "kind": "single",
+   "title": {
+    "ar": "ميزانية الإعلانات الشهرية (تُدفع للمنصات)",
+    "en": "Monthly ad spend (paid to the platforms)"
+   },
+   "options": [
+    {
+     "id": "a500",
+     "icon": "savings",
+     "label": {
+      "ar": "أقل من 500$",
+      "en": "Under $500"
+     }
+    },
+    {
+     "id": "a2k",
+     "icon": "savings",
+     "label": {
+      "ar": "500$ – 2,000$",
+      "en": "$500 – $2,000"
+     },
+     "effect": {
+      "monthly": [
+       100,
+       200
+      ]
+     }
+    },
+    {
+     "id": "a5k",
+     "icon": "savings",
+     "label": {
+      "ar": "2,000$ – 5,000$",
+      "en": "$2,000 – $5,000"
+     },
+     "effect": {
+      "monthly": [
+       200,
+       400
+      ]
+     }
+    },
+    {
+     "id": "a5kp",
+     "icon": "savings",
+     "label": {
+      "ar": "أكثر من 5,000$",
+      "en": "Over $5,000"
+     },
+     "effect": {
+      "monthly": [
+       400,
+       800
+      ]
+     }
+    }
+   ],
+   "allowUnsure": true,
+   "blueprintLabel": {
+    "ar": "ميزانية الإعلانات",
+    "en": "Ad spend"
+   }
+  },
+  {
+   "id": "markets",
+   "kind": "multi",
+   "title": {
+    "ar": "أين جمهورك؟",
+    "en": "Where is your audience?"
+   },
+   "options": [
+    {
+     "id": "local",
+     "icon": "place",
+     "label": {
+      "ar": "مدينتي",
+      "en": "My city"
+     }
+    },
+    {
+     "id": "country",
+     "icon": "flag",
+     "label": {
+      "ar": "بلدي",
+      "en": "My country"
+     }
+    },
+    {
+     "id": "gulf",
+     "icon": "public",
+     "label": {
+      "ar": "الخليج والمنطقة",
+      "en": "The Gulf and the region"
+     },
+     "effect": {
+      "multiplier": 1.1
+     }
+    },
+    {
+     "id": "global",
+     "icon": "language",
+     "label": {
+      "ar": "عالمياً",
+      "en": "Worldwide"
+     },
+     "effect": {
+      "multiplier": 1.2
+     }
+    }
+   ],
+   "blueprintLabel": {
+    "ar": "الأسواق",
+    "en": "Markets"
+   }
+  },
+  {
+   "id": "languages",
+   "kind": "single",
+   "title": {
+    "ar": "بأي لغة؟",
+    "en": "Which languages?"
+   },
+   "options": [
+    {
+     "id": "ar",
+     "icon": "translate",
+     "label": {
+      "ar": "العربية",
+      "en": "Arabic"
+     }
+    },
+    {
+     "id": "en",
+     "icon": "translate",
+     "label": {
+      "ar": "الإنجليزية",
+      "en": "English"
+     }
+    },
+    {
+     "id": "both",
+     "icon": "g_translate",
+     "label": {
+      "ar": "العربية والإنجليزية",
+      "en": "Arabic and English"
+     },
+     "effect": {
+      "multiplier": 1.12
+     }
+    }
+   ],
+   "blueprintLabel": {
+    "ar": "اللغات",
+    "en": "Languages"
+   }
+  },
+  {
+   "id": "reporting",
+   "kind": "single",
+   "title": {
+    "ar": "كيف تريد التقارير؟",
+    "en": "How do you want reports?"
+   },
+   "options": [
+    {
+     "id": "monthly",
+     "icon": "bar_chart",
+     "label": {
+      "ar": "تقرير شهري",
+      "en": "Monthly report"
+     }
+    },
+    {
+     "id": "weekly",
+     "icon": "insights",
+     "label": {
+      "ar": "أسبوعي مع اجتماع",
+      "en": "Weekly with a call"
+     },
+     "effect": {
+      "monthly": [
+       100,
+       250
+      ]
+     }
+    }
+   ],
+   "blueprintLabel": {
+    "ar": "التقارير",
+    "en": "Reporting"
+   }
+  },
+  {
+   "id": "timeline",
+   "kind": "single",
+   "title": {
+    "ar": "متى تريد البدء؟",
+    "en": "When do you want to start?"
+   },
+   "options": [
+    {
+     "id": "now",
+     "icon": "bolt",
+     "label": {
+      "ar": "فوراً",
+      "en": "Right away"
+     },
+     "effect": {
+      "multiplier": 1.15
+     }
+    },
+    {
+     "id": "month",
+     "icon": "schedule",
+     "label": {
+      "ar": "خلال شهر",
+      "en": "Within a month"
+     }
+    },
+    {
+     "id": "quarter",
+     "icon": "date_range",
+     "label": {
+      "ar": "خلال 3 أشهر",
+      "en": "Within 3 months"
+     }
+    },
+    {
+     "id": "flexible",
+     "icon": "all_inclusive",
+     "label": {
+      "ar": "مرن",
+      "en": "Flexible"
+     }
+    }
+   ],
+   "blueprintLabel": {
+    "ar": "الموعد",
+    "en": "Timeline"
+   }
+  },
+  {
+   "id": "budget",
+   "kind": "budget",
+   "title": {
+    "ar": "هل لديك ميزانية في ذهنك؟",
+    "en": "Budget in mind?"
+   },
+   "options": [
+    {
+     "id": "m1",
+     "icon": "savings",
+     "label": {
+      "ar": "أقل من 500$ شهرياً",
+      "en": "Under $500 / month"
+     },
+     "budgetUsd": 6000
+    },
+    {
+     "id": "m2",
+     "icon": "savings",
+     "label": {
+      "ar": "500$ – 1,500$ شهرياً",
+      "en": "$500 – $1,500 / month"
+     },
+     "budgetUsd": 18000
+    },
+    {
+     "id": "m3",
+     "icon": "savings",
+     "label": {
+      "ar": "أكثر من 1,500$ شهرياً",
+      "en": "Over $1,500 / month"
+     },
+     "budgetUsd": 1000000
+    },
+    {
+     "id": "na",
+     "icon": "visibility_off",
+     "label": {
+      "ar": "أفضل عدم الإجابة",
+      "en": "Prefer not to say"
+     }
+    }
+   ],
+   "optional": true,
+   "help": {
+    "ar": "اختياري — يساعدنا على اقتراح الخيار الأنسب",
+    "en": "Optional, helps us recommend the right option"
+   },
+   "blueprintLabel": {
+    "ar": "الميزانية",
+    "en": "Budget"
+   }
+  }
+ ]
+}

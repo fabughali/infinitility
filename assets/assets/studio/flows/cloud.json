@@ -1,0 +1,479 @@
+{
+ "id": "cloud",
+ "serviceId": "cloud",
+ "version": 1,
+ "title": {
+  "ar": "مخطط السحابة والبنية التحتية",
+  "en": "Your cloud and IT blueprint"
+ },
+ "intro": {
+  "ar": "من النقل إلى السحابة إلى الإدارة اليومية — صف وضعك وسنقترح الحل.",
+  "en": "From migration to day-to-day management: describe your setup and we will suggest the solution."
+ },
+ "baseHours": [
+  12,
+  24
+ ],
+ "steps": [
+  {
+   "id": "need",
+   "kind": "multi",
+   "title": {
+    "ar": "ما الذي تحتاجه؟",
+    "en": "What do you need?"
+   },
+   "options": [
+    {
+     "id": "migrate",
+     "icon": "cloud_upload",
+     "label": {
+      "ar": "نقل إلى السحابة",
+      "en": "Move to the cloud"
+     },
+     "effect": {
+      "hours": [
+       40,
+       100
+      ]
+     }
+    },
+    {
+     "id": "new",
+     "icon": "add_box",
+     "label": {
+      "ar": "بنية جديدة",
+      "en": "A new setup"
+     },
+     "effect": {
+      "hours": [
+       30,
+       70
+      ]
+     }
+    },
+    {
+     "id": "devops",
+     "icon": "sync",
+     "label": {
+      "ar": "DevOps ونشر تلقائي",
+      "en": "DevOps and automatic deployments"
+     },
+     "effect": {
+      "hours": [
+       24,
+       60
+      ]
+     }
+    },
+    {
+     "id": "managed",
+     "icon": "dns",
+     "label": {
+      "ar": "خوادم مُدارة",
+      "en": "Managed servers"
+     },
+     "effect": {
+      "monthly": [
+       80,
+       300
+      ],
+      "unlocks": [
+       "managed"
+      ]
+     }
+    },
+    {
+     "id": "backup",
+     "icon": "backup",
+     "label": {
+      "ar": "نسخ احتياطي واسترجاع",
+      "en": "Backup and disaster recovery"
+     },
+     "effect": {
+      "hours": [
+       12,
+       30
+      ],
+      "monthly": [
+       20,
+       80
+      ]
+     }
+    },
+    {
+     "id": "security",
+     "icon": "security",
+     "label": {
+      "ar": "تدقيق أمني",
+      "en": "Security audit"
+     },
+     "effect": {
+      "hours": [
+       20,
+       50
+      ]
+     }
+    },
+    {
+     "id": "office",
+     "icon": "business",
+     "label": {
+      "ar": "بريد ومكتب (Workspace/365)",
+      "en": "E-mail and office (Workspace/365)"
+     },
+     "effect": {
+      "hours": [
+       8,
+       20
+      ],
+      "monthly": [
+       20,
+       100
+      ]
+     }
+    }
+   ],
+   "allowOther": true,
+   "allowUnsure": true,
+   "unsureSpread": 0.3,
+   "help": {
+    "ar": "اختر كل ما ينطبق",
+    "en": "Choose all that apply"
+   },
+   "blueprintLabel": {
+    "ar": "الاحتياج",
+    "en": "Need"
+   }
+  },
+  {
+   "id": "provider",
+   "kind": "single",
+   "title": {
+    "ar": "أين تعمل الآن؟",
+    "en": "Where do you run today?"
+   },
+   "options": [
+    {
+     "id": "none",
+     "icon": "crop_free",
+     "label": {
+      "ar": "لا يوجد بعد",
+      "en": "Nowhere yet"
+     }
+    },
+    {
+     "id": "onprem",
+     "icon": "domain",
+     "label": {
+      "ar": "خوادم في المكتب",
+      "en": "Servers in the office"
+     },
+     "effect": {
+      "hours": [
+       16,
+       32
+      ]
+     }
+    },
+    {
+     "id": "aws",
+     "icon": "cloud",
+     "label": {
+      "ar": "AWS",
+      "en": "AWS"
+     }
+    },
+    {
+     "id": "gcp",
+     "icon": "cloud",
+     "label": {
+      "ar": "Google Cloud",
+      "en": "Google Cloud"
+     }
+    },
+    {
+     "id": "azure",
+     "icon": "cloud",
+     "label": {
+      "ar": "Azure",
+      "en": "Azure"
+     }
+    },
+    {
+     "id": "shared",
+     "icon": "storage",
+     "label": {
+      "ar": "استضافة مشتركة",
+      "en": "Shared hosting"
+     }
+    }
+   ],
+   "allowOther": true,
+   "allowUnsure": true,
+   "blueprintLabel": {
+    "ar": "الوضع الحالي",
+    "en": "Current"
+   }
+  },
+  {
+   "id": "size",
+   "kind": "single",
+   "title": {
+    "ar": "كم خادماً أو تطبيقاً تقريباً؟",
+    "en": "Roughly how many servers or apps?"
+   },
+   "options": [
+    {
+     "id": "s1",
+     "icon": "filter_1",
+     "label": {
+      "ar": "1 – 2",
+      "en": "1 – 2"
+     }
+    },
+    {
+     "id": "s5",
+     "icon": "filter_5",
+     "label": {
+      "ar": "3 – 10",
+      "en": "3 – 10"
+     },
+     "effect": {
+      "multiplier": 1.4
+     }
+    },
+    {
+     "id": "s10p",
+     "icon": "filter_9_plus",
+     "label": {
+      "ar": "أكثر من 10",
+      "en": "More than 10"
+     },
+     "effect": {
+      "multiplier": 2
+     }
+    }
+   ],
+   "allowUnsure": true,
+   "blueprintLabel": {
+    "ar": "الحجم",
+    "en": "Size"
+   }
+  },
+  {
+   "id": "support",
+   "kind": "single",
+   "title": {
+    "ar": "مستوى الدعم المطلوب",
+    "en": "Support level"
+   },
+   "options": [
+    {
+     "id": "business",
+     "icon": "schedule",
+     "label": {
+      "ar": "ساعات العمل",
+      "en": "Business hours"
+     },
+     "effect": {
+      "monthly": [
+       100,
+       250
+      ]
+     }
+    },
+    {
+     "id": "extended",
+     "icon": "more_time",
+     "label": {
+      "ar": "ممتد وعطلات",
+      "en": "Extended and weekends"
+     },
+     "effect": {
+      "monthly": [
+       250,
+       500
+      ]
+     }
+    },
+    {
+     "id": "247",
+     "icon": "all_inclusive",
+     "label": {
+      "ar": "على مدار الساعة",
+      "en": "Around the clock"
+     },
+     "effect": {
+      "monthly": [
+       500,
+       1200
+      ]
+     }
+    }
+   ],
+   "depth": "deep",
+   "module": "managed",
+   "blueprintLabel": {
+    "ar": "الدعم",
+    "en": "Support"
+   }
+  },
+  {
+   "id": "compliance",
+   "kind": "multi",
+   "title": {
+    "ar": "متطلبات خاصة؟",
+    "en": "Any special requirements?"
+   },
+   "options": [
+    {
+     "id": "local_data",
+     "icon": "flag",
+     "label": {
+      "ar": "البيانات داخل الدولة",
+      "en": "Data stays in-country"
+     },
+     "effect": {
+      "hours": [
+       10,
+       24
+      ]
+     }
+    },
+    {
+     "id": "pci",
+     "icon": "credit_card",
+     "label": {
+      "ar": "PCI للمدفوعات",
+      "en": "PCI for payments"
+     },
+     "effect": {
+      "hours": [
+       20,
+       40
+      ]
+     }
+    },
+    {
+     "id": "uptime",
+     "icon": "verified",
+     "label": {
+      "ar": "جاهزية 99.9%",
+      "en": "99.9% uptime"
+     },
+     "effect": {
+      "multiplier": 1.2
+     }
+    }
+   ],
+   "optional": true,
+   "blueprintLabel": {
+    "ar": "المتطلبات",
+    "en": "Requirements"
+   }
+  },
+  {
+   "id": "timeline",
+   "kind": "single",
+   "title": {
+    "ar": "متى تريد البدء؟",
+    "en": "When do you want to start?"
+   },
+   "options": [
+    {
+     "id": "now",
+     "icon": "bolt",
+     "label": {
+      "ar": "فوراً",
+      "en": "Right away"
+     },
+     "effect": {
+      "multiplier": 1.15
+     }
+    },
+    {
+     "id": "month",
+     "icon": "schedule",
+     "label": {
+      "ar": "خلال شهر",
+      "en": "Within a month"
+     }
+    },
+    {
+     "id": "quarter",
+     "icon": "date_range",
+     "label": {
+      "ar": "خلال 3 أشهر",
+      "en": "Within 3 months"
+     }
+    },
+    {
+     "id": "flexible",
+     "icon": "all_inclusive",
+     "label": {
+      "ar": "مرن",
+      "en": "Flexible"
+     }
+    }
+   ],
+   "blueprintLabel": {
+    "ar": "الموعد",
+    "en": "Timeline"
+   }
+  },
+  {
+   "id": "budget",
+   "kind": "budget",
+   "title": {
+    "ar": "هل لديك ميزانية في ذهنك؟",
+    "en": "Budget in mind?"
+   },
+   "options": [
+    {
+     "id": "b2",
+     "icon": "savings",
+     "label": {
+      "ar": "أقل من 2,000$",
+      "en": "Under $2,000"
+     },
+     "budgetUsd": 2000
+    },
+    {
+     "id": "b8",
+     "icon": "savings",
+     "label": {
+      "ar": "2,000$ – 8,000$",
+      "en": "$2,000 – $8,000"
+     },
+     "budgetUsd": 8000
+    },
+    {
+     "id": "b8p",
+     "icon": "savings",
+     "label": {
+      "ar": "أكثر من 8,000$",
+      "en": "Over $8,000"
+     },
+     "budgetUsd": 1000000
+    },
+    {
+     "id": "na",
+     "icon": "visibility_off",
+     "label": {
+      "ar": "أفضل عدم الإجابة",
+      "en": "Prefer not to say"
+     }
+    }
+   ],
+   "optional": true,
+   "help": {
+    "ar": "اختياري — يساعدنا على اقتراح الخيار الأنسب",
+    "en": "Optional, helps us recommend the right option"
+   },
+   "blueprintLabel": {
+    "ar": "الميزانية",
+    "en": "Budget"
+   }
+  }
+ ]
+}
